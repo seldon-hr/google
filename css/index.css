@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+    height: 100%;
+    
+}
 
 header{
     display: flex;
@@ -17,11 +22,18 @@ header{
     font-size: 15px;
 }
 
+.iconSquare{
+    font-size: 20px;
+    color: gray;
+}
+
 .buttonStart{
     margin: 0px 8px;
     padding: 9px 23px;
     color: #FFF;
     background: #1A73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 a{
@@ -43,12 +55,12 @@ main{
     align-content: center;
     flex-direction: column;
     text-align: center;
-    margin:10vw;
+    margin:5vw;
 }
 
 .logo{
     width: 20vw;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .inputQuery{
@@ -58,7 +70,7 @@ main{
     height: 40px;
     padding: 12px 20px;
     box-shadow: 3px 2px 10px -3px rgba(0,0,0,0.75);
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -83,4 +95,35 @@ ul{
 
 ul li{
     display: inline-block;
+}
+
+footer{
+    position: absolute;
+    bottom: -47vh;
+    width: 100%;
+}
+
+.row{
+    background: #F3F2F3;
+    height: 5vh;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757A;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+}
+
+.row ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.row a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #70757A;
+    position: relative;
+    bottom: 5px;
 }
